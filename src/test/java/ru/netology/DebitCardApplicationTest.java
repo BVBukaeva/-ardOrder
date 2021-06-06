@@ -21,7 +21,7 @@ public class DebitCardApplicationTest {
         $("[data-test-id=phone] input").setValue("+79260000000");
         $("[data-test-id=agreement]").click();
         $(".button").click();
-        $(".Success_successBlock__2L3Cw").shouldHave(text(" Ваша заявка успешно отправлена!" +
+        $("[data-test-id=order-success]").shouldHave(text(" Ваша заявка успешно отправлена!" +
                 " Наш менеджер свяжется с вами в ближайшее время."));
     }
 
